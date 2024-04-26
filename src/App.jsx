@@ -7,7 +7,7 @@ import Guitar from './components/Guitar';
 import { db } from './data/db';
 
 export default function App() {
-  const [data, setData] = useState([db]);
+  const [data, setData] = useState(db);
 
   return (
     <>
@@ -16,21 +16,10 @@ export default function App() {
         <h2 className="text-center">Nuestra Colección</h2>
 
         <div className="row mt-5">
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
-          <Guitar />
+          {data.map((guitar) => (
+            //  only with parenthesis you have an implicity return
+            <Guitar key={guitar.id} {...guitar} />
+          ))}
         </div>
       </main>
       <Footer />
