@@ -30,10 +30,14 @@ export default function App() {
     }
   };
 
+  const removeFromCart = (id) => {
+    setCart((prevCart) => prevCart.filter((guitar) => guitar.id !== id));
+    notify(`Eliminado el elemento ID ${id}`);
+  };
   return (
     <>
-      <ToastContainer position="top-right" closeOnClick theme="light" />
-      <Header cart={cart} />
+      <ToastContainer position="top-left" closeOnClick theme="light" />
+      <Header cart={cart} removeFromCart={removeFromCart} />
       <main className="container-xl mt-5">
         <h2 className="text-center">Nuestra Colección</h2>
 
