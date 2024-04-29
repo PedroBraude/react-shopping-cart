@@ -8,7 +8,7 @@ This project is a guitar shopping cart developed with React 18, Vite, and Tailwi
 
 - **[React 18](https://reactjs.org/)**: A JavaScript library for building user interfaces.
 - **[Vite](https://vitejs.dev/)**: A build tool that provides a faster development environment.
-- **[Bootstrap]([https://tailwindcss.com/](https://getbootstrap.com/))**: A CSS framework for rapid and responsive design.
+- **[Bootstrap](https://getbootstrap.com/)**: A CSS framework for rapid and responsive design.
 - **[Netlify](https://www.netlify.com/)**: A platform to automate deployments and manage modern web applications.
 
 ## Features
