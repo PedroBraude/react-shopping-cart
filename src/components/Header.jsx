@@ -1,6 +1,12 @@
 import { useMemo } from 'react';
 
-export default function Header({ cart, removeFromCart }) {
+export default function Header({
+  cart,
+  removeFromCart,
+  increaseQuantity,
+  decreaseQuantity,
+  clearCart,
+}) {
   // State derivado
   const isEmpty = useMemo(() => cart.length === 0, [cart]);
   const cartTotal = useMemo(
@@ -56,11 +62,19 @@ export default function Header({ cart, removeFromCart }) {
                             <td>{name}</td>
                             <td className="fw-bold">${price}</td>
                             <td className="flex align-items-start gap-4">
-                              <button type="button" className="btn btn-dark">
+                              <button
+                                type="button"
+                                className="btn btn-dark"
+                                onClick={() => decreaseQuantity(id)}
+                              >
                                 -
                               </button>
                               {quantity}
-                              <button type="button" className="btn btn-dark">
+                              <button
+                                type="button"
+                                className="btn btn-dark"
+                                onClick={() => increaseQuantity(id)}
+                              >
                                 +
                               </button>
                             </td>
@@ -68,7 +82,7 @@ export default function Header({ cart, removeFromCart }) {
                               <button
                                 className="btn btn-danger"
                                 type="button"
-                                onClick={() => removeFromCart(id)}
+                                onClick={() => removeFromCart(id, name)}
                               >
                                 X
                               </button>
@@ -82,7 +96,10 @@ export default function Header({ cart, removeFromCart }) {
                   <p className="text-end">
                     Total pagar: <span className="fw-bold">{cartTotal}</span>
                   </p>
-                  <button className="btn btn-dark w-100 mt-3 p-2">
+                  <button
+                    className="btn btn-dark w-100 mt-3 p-2"
+                    onClick={() => clearCart()}
+                  >
                     Vaciar Carrito
                   </button>
                 </div>
