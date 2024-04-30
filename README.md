@@ -19,6 +19,7 @@ This project is a guitar shopping cart developed with React 18, Vite, and Tailwi
 - Interactive notifications with `react-toastify` to provide feedback on actions like adding or removing items.
 - Functionality to manage item quantities in the cart, including restrictions to prevent exceeding maximum or minimum limits.
 - Dynamic display of guitar collection and responsive design suitable for all devices.
+- Custom hook (useCart.js) is specifically designed to manage cart operations efficiently. It encapsulates all cart-related functionalities such as adding, removing, and updating item quantities within the cart, as well as computing the cart's total and determining if the cart is empty.
 
 
 ## Installation
