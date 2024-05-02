@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Guitar from './components/Guitar';
-import { useCart } from './hooks/useCart';
+import { useCart } from './hooks/useCart.ts';
 
 export default function App() {
   const {
