@@ -1,6 +1,6 @@
 # Guitar Shopping Cart
 
-This project is a guitar shopping cart developed with React 18, Vite, and Tailwind CSS as a practice application to enhance my web development skills. It allows users to manage their guitar purchases, calculating total costs.
+This project is a guitar shopping cart developed with React 18, Vite,TypeScript and Tailwind CSS as a practice application to enhance my web development skills. It allows users to manage their guitar purchases, calculating total costs.
 
 **Demo:** [Guitar Shopping Cart Live Demo](https://shopping-cart-braude.netlify.app/)
 
@@ -10,6 +10,7 @@ This project is a guitar shopping cart developed with React 18, Vite, and Tailwi
 - **[Vite](https://vitejs.dev/)**: A build tool that provides a faster development environment.
 - **[Bootstrap](https://getbootstrap.com/)**: A CSS framework for rapid and responsive design.
 - **[Netlify](https://www.netlify.com/)**: A platform to automate deployments and manage modern web applications.
+- **[TypeScript](https://www.typescriptlang.org/)**: Is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale..
 
 ## Features
 
